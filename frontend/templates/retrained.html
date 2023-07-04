@@ -1,0 +1,16 @@
+{% extends "layouts/main.html" %}
+
+{% block static %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="main-page">
+        <p style="font-size: 30px">Weight Distribution Heatmap of the refined Model</p>
+        <img src="../static/edge_heatmap.png" alt="cnn">
+    </div>
+
+{% endblock %}

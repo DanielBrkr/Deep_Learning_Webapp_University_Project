@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../font-inter/Inter-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font-inter/Inter-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font-inter/Inter-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+html {
+  background-color: #0A222E;
+  background-image: url("../images/highway.png");
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "Inter";
+}
+
+#menu-upper {
+  height: 84px;
+}
+
+.table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+ul#navigation-bar {
+  list-style: none;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+ul#navigation-bar li {
+  display: inline;
+}
+
+li a {
+  color: white;
+  padding: 50px;
+  font-size: 20px;
+}
+
+a:visited, a:link, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {  
+  position: fixed;  
+  left: 10px;  
+  bottom: 5px;  
+  right: 10px;   
+  width: 95%;   
+  text-align: center;  
+}  
+
+ul#impressum {
+	list-style: none;
+}
+
+ul#impressum li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#skunkworks img{
+  height: 60px;
+  width: 60px;
+}
+
+#tum img {
+  height: 40px;
+  width: 80px;
+}
+
+.main-page {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#main-page-img-right {
+  width: 800px;
+  height: 932px;
+  position: relative;
+  background-image: url("../images/background1.jpg");
+  background-position: center;
+  border-radius: 45px 0 0 45px;
+  top: -95px;
+  right: -8px;
+  float: right;
+}
+
+#main-page-content {
+  width: 750px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  right: 0;
+  position: relative;
+}
+
+#main-page-content-heading {
+  height: 150px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#main-page-content-subtext {
+  position: absolute;
+  top: 150px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#main-page-content-button-label {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px 35px;
+  border-radius: 20px;
+}
+
+#main-page-content-button-predict {
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 35px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.label-page-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+
+.upload-section {
+  color: black;
+  background-color: #D9D9D9;
+  opacity: 0.8;
+  border-radius: 20px;
+  display: inline-block;
+  width: 600px;
+}
+
+.select_button {
+  color: #0F91D2;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #0F91D2;
+  border-radius: 20px;
+}
+
+.select_button:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.upload-section-bottom {
+  height: 58px;
+  background-color: #4C4C4C;
+  border-radius: 0 0 20px 20px;
+  border-top: 2px solid black;
+  margin-top: 15px;
+}
+
+.upload-section-bottom-button, .upload-section-bottom-button-not-active {
+  opacity: 0.8;
+  font-size: 25px;
+  color: white;
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 8px 25px 5px 0;
+  background-color: #4C4C4C;
+}
+
+.upload-section-bottom-button:hover {
+  color: black;
+  border: 2px solid white;
+  background-color: white;
+}
+
+#upload-button1 {
+  display: none;
+}

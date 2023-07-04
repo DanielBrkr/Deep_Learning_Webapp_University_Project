@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+<!-- Set height to browser window height -->
+<form action="/" id="myForm" method="get">
+    <label>
+        <input type="text" hidden name="height" id="input-height">
+        <input type="text" hidden name="width" id="input-width">
+    </label>
+    <input type="submit" hidden value="submit">
+</form>
+<script>
+    document.getElementById("input-height").value = window.innerHeight
+    document.getElementById("input-width").value = window.innerWidth
+</script>
+
+<script>
+    if ((!(window.innerHeight === {{ height }})) || (!(window.innerWidth === {{ width }}))) {
+        document.getElementById("myForm").submit();
+    }
+
+</script>
+
+</body>
+</html>

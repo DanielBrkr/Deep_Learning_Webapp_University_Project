@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+# pylint throws error msg by importing another custom python file 
+# eg. utils.py -> classification_pipeline.py 
+# this behaviour is not intended 
+  disable=
+    import-error

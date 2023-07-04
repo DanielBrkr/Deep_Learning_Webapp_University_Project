@@ -1,0 +1,56 @@
+{% extends "layouts/main.html" %}
+
+{% block static %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="label-page-content main-page" xmlns="http://www.w3.org/1999/html">
+        <p style="font-weight: 300; font-size: 50px; opacity: 0.6">Predict Data</p>
+        <div class="upload-section">
+            <p style="color: #4C4C4C; font-size: 25px">Upload images to predict here</p>
+            <img src="../static/images/cloud-upload.png" width="40" alt="image with cloud uploading">
+            <p style="font-weight: bold; color: black">Select files or drag and drop here</p>
+            <p style="color: black; opacity: 0.5">JPG, JPEG, PNG and WEBP only</p>
+
+            <form method="post" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                {{ form.file() }}
+                <label class="select_button"> Upload
+                    {{ form.submit() }}
+                </label>
+            </form>
+
+            {% if successfully == True %}
+                <p style="color: darkgreen; font-weight: bold">Image(s) successfully uploaded</p>
+            {% elif successfully == 'format' %}
+                <p style="color: red; font-weight: bold">Wrong Data Format</p>
+            {% else %}
+                <br>
+            {% endif %}
+
+            <form action="/prediction_results">
+                <span style="font-weight: bold">Model Selection</span>
+                <select name="model-selection" id="model-selection" class="select_button" style="padding: 5px; border-radius: 15px">
+                    <option value="Model 1">Model 1</option>
+                    <option value="Model 2">Model 2</option>
+                    <option value="Model 3">Model 3</option>
+                </select>
+
+                <div class="upload-section-bottom">
+                    {% if successfully == True %}
+                        <input type="submit" class="upload-section-bottom-button" style="float: right" value="Continue">
+                        <a href="/index" class="upload-section-bottom-button" style="float: right">Delete</a>
+                    {% else %}
+                        <a class="upload-section-bottom-button-not-active" style="float: right">Continue</a>
+                        <a class="upload-section-bottom-button-not-active" style="float: right">Delete</a>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- <a href="/prediction_results" id="main-page-content-button-predict">Prediction Results</a> -->
+
+{% endblock %}
