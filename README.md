@@ -1,4 +1,4 @@
-# Disclaimer: This project, originating from a university group assignment, has been uploaded in its redacted form to exclude any sensitive information such as data, weights, specific files, and configuration settings, rendering the web application non-functional. Its purpose is solely to demonstrate the software engineering skills and project involvement us.
+# Disclaimer: This project, originating from a university group assignment, has been uploaded in its redacted form to exclude any sensitive information such as data, weights, specific files, and configuration settings, rendering the web application non-functional. Its purpose is solely to demonstrate the software engineering skills and project involvement of us.
 
 
 ## Table of Contents
